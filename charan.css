@@ -1,0 +1,538 @@
+body{
+    background-color: skyblue;
+    color: whitesmoke;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    z-index: 90;
+    padding: 10px 0;
+}
+.container{
+    max-width: 1900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 4rem;
+}
+nav a{
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+    margin-right: 1.5em;
+}
+nav a:hover{
+    color: skyblue;
+}
+.hero{
+    padding: 120px 20px 50px;
+    background-color: #0f0f1c;
+}
+.hero .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin-left: 70px;
+  padding: 0 20px;
+}
+.hero .text {
+  min-width: 300px;
+  margin-right: 50%;
+}
+.hero h3 {
+  font-size: 24px;
+  margin-bottom: 3px;
+  margin-bottom: -1.5em;
+
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 3px;
+  margin-bottom: -0.3em;
+}
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero h2 span {
+    color: #00bcd4;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 2.0;
+  margin-bottom: 20px;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 18px;
+    color: whitesmoke;
+    transition: color 0.3s ease;
+    border-radius: 50%; 
+    background-color: #0f0f1c;
+    border: 1px solid #00eaff; 
+    box-shadow: 3px 4px 8px rgba(0, 234, 255, 0.4); 
+    transition: all 0.3s ease;
+    padding: 0.5em 0.5em;
+}
+
+.socials a:hover {
+  color: #00bcd4;
+  animation: jumpHover 0.8s ease;
+}
+/*@keyframes jumpHover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}*/
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: blue;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+  animation: rubberbandhover 0.9s ease-in;
+}
+/*@keyframes rubberbandhover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+*/
+.hero .profile-pic {
+    min-width: 250px;
+    text-align: center;
+}
+.hero .profile-pic img {
+    position: relative;
+    left: 150px;
+    width: 250px;
+    border-radius: 65%;
+    border: 1px solid blue;
+    box-shadow: 3px 4px 8px rgba(0, 234, 255, 0.4);
+    margin-top: -430px;
+    top: 20px;
+    display: block;
+    margin-left: 400px;
+}
+.hero .profile-pic img:hover{
+  animation: jumpHover 0.6s ease;
+}
+/*@keyframes jumpHover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+*/
+/*about section*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 60px;
+    gap: 50px;
+    background-color: #0f0f1c;
+}
+.image-container img {
+    width: 270px;
+    height: 385px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid blue;
+}
+.image-container img:hover{
+    animation: jumpHover 0.6s ease;
+}
+/*@keyframes jumpHover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+*/
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: right;
+  margin-right: 310px;
+}
+
+.about-content h2 span {
+  color: #4dafff;
+}
+
+.about-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 200px;
+}
+
+.about-content p {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 430px;
+}
+.read-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #4dafff;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #4dafff80;
+    transition: background 0.3s;
+    margin-left: 420px;
+}
+
+.read-btn:hover {
+  background: #368ed1;
+  animation: jumpHover 0.6s ease;
+}
+/*@keyframes jumpHover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}*/
+/*Services Section*/
+.services {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #1c2230;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #3eb4ff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-box {
+    background: #1c2230;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 300px;
+    color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+.service-box:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+.service-icon {
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 15px;
+}
+/*Skills Section*/
+.skills-section {
+    padding: 60px 50px;
+    background-color: #0f0f1c;
+}
+.skills-section h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.skills-section h1 span {
+    color: #3eb4ff;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.skill-column {
+    flex: 1;
+    min-width: 300px;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.skill label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.bar {
+    width: 100%;
+    background: #2a2f4f;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress {
+    background: skyblue;
+    height: 100%;
+    border-radius: 5px;
+}
+/*Contact section*/
+.contact {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #0f0f1c;
+}
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.input-group input,
+textarea {
+    flex: 1;
+    background: #1b203f;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+textarea {
+    width: 100%;
+    resize: none;
+}
+.contact-form .btn {
+  margin-top: 20px;
+}
+/*Footer Section*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #111425;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header h2{
+    color: white;
+    font-weight: bold;
+    margin-right: 690px;
+    margin-top: 3px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.top{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.parent h1{
+    text-align: center;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    margin: 50px;
+}
+.child-1{
+    padding: 20px;
+    height: 350px;
+    width:250px;
+    border: 1px solid ;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(25, 25, 35);
+}
+.child-1 h2{
+    color: white;
+    font-weight: bold;
+}
+.child-1 button{
+    background-color: skyblue;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+}
+button:hover{
+    box-shadow: black;
+}
+.child-2{
+    padding: 20px;
+    height: 350px;
+    width:250px;
+    border: 1px solid ;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(25, 25, 35);
+}
+.child-2 h2{
+    color: white;
+    font-weight: bold;
+}
+.child-2 button{
+    background-color: skyblue;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+}
+.child-3{
+    padding: 20px;
+    height: 350px;
+    width:250px;
+    border: 1px solid ;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(25, 25, 35);
+}
+.child-3 h2{
+    color: white;
+    font-weight: bold;
+}
+.child-3 button{
+    background-color: skyblue;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+}
